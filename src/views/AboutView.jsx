@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { PropTypes } from "prop-types";
-import "./AboutMePage.css";
+import "./AboutView.css";
 
 function AboutView() {
   const [isLoaded, setIsLoaded] = useState(false);
