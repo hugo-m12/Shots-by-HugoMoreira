@@ -8,7 +8,7 @@ This Project was made with React.js + Vite.
 
 # Online Links 
 
-Soon...
+shotsbyhugomoreira.netlify.app
 
 # React + Vite
 
