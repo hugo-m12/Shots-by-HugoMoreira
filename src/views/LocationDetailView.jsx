@@ -4,7 +4,7 @@ import { useParams, useLocation } from "wouter";
 import { useEffect, useState } from "react";
 import LocationsMap from "../components/LocationsMap";
 import locationsService from "../services/locationsService";
-import LoadingAnim from "../components/loadingAnim";
+import LoadingAnim from"../components/LoadingAnim";
 
 function LocationDetailView() {
   const params = useParams();

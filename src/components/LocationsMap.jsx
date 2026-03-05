@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import PropTypes from "prop-types";
-import LoadingAnim from "./loadingAnim";
+import LoadingAnim from "./LoadingAnim";
 import "leaflet/dist/leaflet.css";
 
 const LocationsMap = ({ location }) => {

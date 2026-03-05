@@ -4,7 +4,7 @@ import locationsService from "../services/locationsService";
 import { Link } from "wouter";
 import LocationCard from "../components/LocationCard";
 import LocationsGlobe from "../components/LocationsGlobe";
-import LoadingAnim from "../components/loadingAnim";
+import LoadingAnim from "../components/LoadingAnim";
 
 function HomeView() {
   const [locations, setLocations] = useState([]);
