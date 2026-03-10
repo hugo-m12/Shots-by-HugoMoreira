@@ -8,7 +8,9 @@ This Project was made with React.js + Vite.
 
 # Online Links 
 
-Soon...
+You can view the deployed website here:
+
+[Shots by Hugo Moreira](https://shotsbyhugomoreira.netlify.app)
 
 # React + Vite
 
