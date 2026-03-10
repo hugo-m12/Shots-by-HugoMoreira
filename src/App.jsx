@@ -18,18 +18,20 @@ register();
 
 function App() {
   return (
-    <>
-    <Header />
-      <Switch>
-        <Route exact path="/" component={HomeView} />
-        <Route path="/About-me" component={AboutView} />
-        <Route path="/Contact" component={ContactView} />
-        <Route path="/404" component={Error404View} />
-        <Route path="/AddLocation" component={AddLocationView} />
-        <Route path="/:locationName" component={LocationDetailView} />
-      </Switch>
-    <Footer />
-    </>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-1">
+        <Switch>
+          <Route exact path="/" component={HomeView} />
+          <Route path="/About-me" component={AboutView} />
+          <Route path="/Contact" component={ContactView} />
+          <Route path="/404" component={Error404View} />
+          <Route path="/AddLocation" component={AddLocationView} />
+          <Route path="/:locationName" component={LocationDetailView} />
+        </Switch>
+      </main>
+      <Footer />
+    </div>
   );
 }
 

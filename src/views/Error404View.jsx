@@ -1,7 +1,7 @@
 function Error404View() {
   return (
     <>
-      <div className="text-center flex justify-center items-center min-h-screen">
+      <div className="text-center flex justify-center items-center min-h-full py-16">
         <div className="text-center">
           <h1 className="text-9xl font-black text-gray-200">404</h1>
           <img
