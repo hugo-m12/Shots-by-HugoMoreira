@@ -2,8 +2,15 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
 body{
   font-family: Spinnaker, 'Times New Roman', Times, serif, sans-serif;
+  margin: 0;
 }
 
 /*Submit Button */
