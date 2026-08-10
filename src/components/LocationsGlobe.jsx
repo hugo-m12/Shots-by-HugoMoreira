@@ -36,7 +36,7 @@ function LocationsGlobe() {
     {
       lat: 52.50,
       lng: 13.33,
-      color: "green",
+      color: "white",
       label: "Berlin",
     },
     {
@@ -44,6 +44,12 @@ function LocationsGlobe() {
       lng: -3.70,
       color: "purple",
       label: "Madrid",
+    },
+    {
+      lat: 53.35,
+      lng: -6.26,
+      color: "green",
+      label: "Dublin",
     },
   ];
   
@@ -65,6 +71,9 @@ function LocationsGlobe() {
         autoRotate={true}
         autoRotateSpeed={3}
         enablePointerInteraction={true}
+        onPointClick={(point) => {
+    console.log(point.label);
+  }}
       />
     </div>
   );
