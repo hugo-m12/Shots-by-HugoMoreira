@@ -1,8 +1,8 @@
+import locationsData from "../data/locations.json";
+
 async function loadLocationsData() {
     try {
-        const response = await fetch("src/data/locations.json");
-        const result = await response.json();
-        return(result);
+        return locationsData;
 
     } catch (error) {
         console.error(error); 
