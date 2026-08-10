@@ -37,14 +37,14 @@ function AddLocationView() {
         <div className="grid p-16 items-center text-center justify-center gap-5">
           <input
             required={true}
-            className="border border-gray-400/60 rounded-sm w-[352px] h-10"
+            className="border border-gray-400/60 rounded-sm w-[352px] h-10 pl-2"
             defaultValue={country}
             onChange={(e) => setCountry(e.target.value)}
             placeholder="Country"
           ></input>
           <input
             required={true}
-            className="border border-gray-400/60 rounded-sm w-[352px] h-10"
+            className="border border-gray-400/60 rounded-sm w-[352px] h-10 pl-2"
             defaultValue={city}
             onChange={(e) => setCity(e.target.value)}
             placeholder="City"
@@ -53,14 +53,14 @@ function AddLocationView() {
             <p>Arrival Date</p>
             <p>Departure Date</p>
             <input
-              className="border border-gray-400/60 rounded-sm w-[168px] h-10"
+              className="border border-gray-400/60 rounded-sm w-[168px] h-10 pl-2"
               required={true}
               defaultValue={arrivalDate}
               onChange={(e) => setArrivalDate(e.target.value)}
               type="date"
             ></input>
             <input
-              className="border border-gray-400/60 rounded-sm w-[168px] h-10"
+              className="border border-gray-400/60 rounded-sm w-[168px] h-10 pl-2"
               required={true}
               defaultValue={departureDate}
               onChange={(e) => setDepartureDate(e.target.value)}
@@ -69,7 +69,7 @@ function AddLocationView() {
           </div>
           <textarea
             defaultValue={description}
-            className="border border-gray-400/60 rounded-sm w-[352px]"
+            className="border border-gray-400/60 rounded-sm w-[352px] pl-2"
             onChange={(e) => setdescription(e.target.value)}
             rows={5}
             placeholder="Location description"
