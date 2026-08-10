@@ -12,7 +12,7 @@ async function loadLocationsData() {
 
   async function getCurrentLocationWeather(city) { 
     try {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=702f1736e87f6994a12d0929f92c0d76&units=metric`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=702f1736e87f6994a12d0929f92c0d76&units=metric`);
         const result = await response.json();
         return(result);
 
@@ -24,7 +24,7 @@ async function loadLocationsData() {
 
   async function getLocation5daysForecast(city) {
     try {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/forecast/?q=${city}&cnt=5&APPID=702f1736e87f6994a12d0929f92c0d76&units=metric`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast/?q=${city}&cnt=5&APPID=702f1736e87f6994a12d0929f92c0d76&units=metric`);
         const result = await response.json();
         return(result);
         
