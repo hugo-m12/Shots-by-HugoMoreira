@@ -11,13 +11,13 @@ function ContactView(){
         }}
       >
         <div className="grid p-16 items-center text-center justify-center gap-5">
-          <input className="border border-gray-400/60 rounded-sm w-[352px] h-10"
+          <input className="border border-gray-400/60 rounded-sm w-[352px] h-10 pl-2"
             placeholder="Name"
           ></input>
-          <input className="border border-gray-400/60 rounded-sm w-[352px] h-10"
+          <input className="border border-gray-400/60 rounded-sm w-[352px] h-10 pl-2"
             placeholder="Email"
           ></input>
-          <textarea className="border border-gray-400/60 rounded-sm w-[352px] mb-4"
+          <textarea className="border border-gray-400/60 rounded-sm w-[352px] mb-4 pl-2"
             rows={7}
             placeholder="Message"
           ></textarea>
