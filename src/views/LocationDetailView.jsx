@@ -91,12 +91,15 @@ function LocationDetailView() {
           </Swiper>
         </div>
       </section>
+      
+    <article>
+      <div className="mx-auto max-w-5xl p-5 text-wrap text-lg leading-relaxed">
+        <p className="whitespace-pre-wrap text-center">
+          {city.description}
+        </p>
+      </div>
+    </article>
 
-      <article>
-        <div className="p-5 text-wrap leading-snug text-lg">
-          <p className="whitespace-pre-wrap text-center">{city.description}</p>
-        </div>
-      </article>
       <section>
         <div className="p-5">
           <LocationsMap location={city} className="p-5" />

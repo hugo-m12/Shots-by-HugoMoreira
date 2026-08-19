@@ -10,25 +10,32 @@ const LocationsMap = ({ location }) => {
   };
 
   return (
-    <div>
+
+  <div className="flex w-full justify-center px-4">
+    <div className="w-full max-w-5xl overflow-hidden rounded-xl">
       {location.coordinates && location.coordinates.length > 0 ? (
-        <MapContainer className="h-[300px]"
+        <MapContainer
+          className="h-[320px] w-full"
           center={location.coordinates}
           zoom={12}
           scrollWheelZoom={false}
         >
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+
           <Marker position={location.coordinates}>
             <Popup>{location.city}</Popup>
           </Marker>
         </MapContainer>
       ) : (
-        <div className="flex items-center justify-center p-20">
+        <div className="flex h-[320px] items-center justify-center">
           <LoadingAnim />
         </div>
       )}
     </div>
+  </div> 
+  
   );
+
 };
 
 export default LocationsMap;
